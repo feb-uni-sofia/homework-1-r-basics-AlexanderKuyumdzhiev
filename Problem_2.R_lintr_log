@@ -1,0 +1,100 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:2:1: style: Use two spaces to indent, never tabs.
+	xminFahrenheit <- c(9/5*xmin + 32)
+^
+Problem_2.R:8:5: style: Put spaces around all infix operators.
+xmax-xmin
+   ~^~
+Problem_2.R:15:10: style: Put spaces around all infix operators.
+xmin[xmin<avgmin]
+        ~^~
+Problem_2.R:17:10: style: Put spaces around all infix operators.
+xmax[xmax>avgmax]
+        ~^~
+Problem_2.R:20:1: style: Variable and function names should be all lowercase.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+^~~~~~~~~~
+Problem_2.R:20:17: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                ^~~~~
+Problem_2.R:20:24: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                       ^~~~~
+Problem_2.R:20:31: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                              ^~~~~
+Problem_2.R:20:38: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                                     ^~~~~
+Problem_2.R:20:45: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                                            ^~~~~
+Problem_2.R:20:52: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                                                   ^~~~~~
+Problem_2.R:20:60: style: Only use double-quotes.
+monthNames <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July')
+                                                           ^~~~~~
+Problem_2.R:21:16: style: Variable and function names should be all lowercase.
+names(xmin) <- monthNames
+               ^~~~~~~~~~
+Problem_2.R:22:16: style: Variable and function names should be all lowercase.
+names(xmax) <- monthNames
+               ^~~~~~~~~~
+Problem_2.R:34:9: style: Variable and function names should be all lowercase.
+	xminFahrenheit <- c(9/5*xmin + 32)
+        ^~~~~~~~~~~~~~
+Problem_2.R:34:24: style: Put spaces around all infix operators.
+	xminFahrenheit <- c(9/5*xmin + 32)
+                      ~^~~
+Problem_2.R:34:30: style: Put spaces around all infix operators.
+	xminFahrenheit <- c(9/5*xmin + 32)
+                            ~^~
+Problem_2.R:34:32: style: Put spaces around all infix operators.
+	xminFahrenheit <- c(9/5*xmin + 32)
+                              ~^~
+Problem_2.R:39:23: style: Variable and function names should be all lowercase.
+  df.xminFahrenheit = xminFahrenheit
+                      ^~~~~~~~~~~~~~
+Problem_2.R:43:30: style: Only use double-quotes.
+Fahrenheit <- temperatures[, 'xminFahrenheit']
+                             ^~~~~~~~~~~~~~~~
+Problem_2.R:52:13: style: Place a space before left parenthesis, except in a function call.
+Fahrenheit[-(6:7), ]
+            ^
+Problem_2.R:54:1: style: Variable and function names should be all lowercase.
+monthFahrenheit <- data.frame(
+^~~~~~~~~~~~~~~
+Problem_2.R:55:23: style: Variable and function names should be all lowercase.
+  df.xminFahrenheit = xminFahrenheit[1:5]
+                      ^~~~~~~~~~~~~~
+Problem_2.R:58:1: style: Variable and function names should be all lowercase.
+monthFh <- data.frame(
+^~~~~~~
+Problem_2.R:59:23: style: Variable and function names should be all lowercase.
+  df.xminFahrenheir = xminFahrenheit[c(-6,-7)]
+                      ^~~~~~~~~~~~~~
+Problem_2.R:59:43: style: Commas should always have a space after.
+  df.xminFahrenheir = xminFahrenheit[c(-6,-7)]
+                                          ^
+> 
+> 
